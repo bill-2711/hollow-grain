@@ -50,11 +50,20 @@ body {
 
 .btn:link,
 .btn:visited {
-  background-color: oklch(0.714 0.014 41.2);
   font-size: 2rem;
   color: #fff;
   padding: 1.6rem 3.2rem;
   display: inline-block;
   border-radius: 15px;
   text-decoration: none;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: oklab(71.394% 0.01065 0.00923);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: oklab(80.321% 0.00636 0.00624);
 }
