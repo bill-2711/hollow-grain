@@ -16,7 +16,7 @@ body {
 }
 
 .section-hero {
-  background-color: oklch(0.922 0.005 34.3);
+  background-color: #e8e4e3;
   padding: 9.6rem 0;
 }
 
@@ -36,6 +36,7 @@ body {
   line-height: 1.05;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
+  color: oklab(44.108999999999995% 0.0078 0.01078);
 }
 
 .hero-description {
@@ -48,6 +49,10 @@ body {
   width: 100%;
 }
 
+.marging-right-sm {
+  margin-right: 1.6rem !important;
+}
+
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -56,6 +61,7 @@ body {
   display: inline-block;
   border-radius: 15px;
   text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .btn--full:link,
@@ -65,5 +71,49 @@ body {
 
 .btn--outline:link,
 .btn--outline:visited {
-  background-color: oklab(80.321% 0.00636 0.00624);
+  background-color: oklab(71.394% 0.01065 0.00923);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: oklab(44.108999999999995% 0.0078 0.01078 / 0.772);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: oklab(44.108999999999995% 0.0078 0.01078 / 0.823);
+}
+
+.delivered-brands {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-clients {
+  display: flex;
+}
+
+.delivered-clients img {
+  display: flex;
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid oklch(0.922 0.005 34.3);
+}
+
+.delivered-clients img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #59514c;
+  font-weight: 700;
 }
